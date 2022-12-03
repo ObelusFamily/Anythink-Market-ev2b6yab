@@ -30,9 +30,9 @@ const ItemPreview = (props) => {
   };
 
   if (!item.image) {
-    const itemImage = "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png"
+    props.itemImage = "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png"
   } else {
-    const itemImage = item.image
+    props.itemImage = item.image
   }
   
 
@@ -43,7 +43,7 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src={itemImage}
+        src={props.itemImage}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
