@@ -49,22 +49,12 @@ class Item extends React.Component {
         <div className="text-dark">
           <div className="row bg-white p-4">
             <div className="col-6">
-              {this.props.item.image !== "" ? 
               <img
-              src={this.props.item.image}
-              alt={this.props.item.title}
-              className="item-img"
-              style={{ height: "500px", width: "100%", borderRadius: "6px" }}
-            />
-        : 
-          <img
-          src='https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png'
-          alt={this.props.item.title}
-          className="item-img"
-          style={{ height: "500px", width: "100%", borderRadius: "6px" }}
-        />
-        }
-              
+                src={this.props.item.image}
+                alt={this.props.item.title}
+                className="item-img"
+                style={{ height: "500px", width: "100%", borderRadius: "6px" }}
+              />
             </div>
 
             <div className="col-6">
