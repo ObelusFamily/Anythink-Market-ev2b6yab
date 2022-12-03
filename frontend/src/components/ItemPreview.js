@@ -42,7 +42,12 @@ const ItemPreview = (props) => {
         style={{ borderRadius: "20px" }}
       />
         : 
-        null
+        <img
+        alt="item"
+        src='https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png'
+        className="card-img-top item-img"
+        style={{ borderRadius: "20px" }}
+      />
         }
       <div className="card-body">
         <Link to={`/item/${item.slug}`} className="text-white">
