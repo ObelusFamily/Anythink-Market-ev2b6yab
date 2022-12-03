@@ -22,7 +22,7 @@ exports[`CommentInput component Snapshot testing with no user 1`] = `
     <img
       alt="name"
       className="user-pic mr-2"
-      src=""
+      src='https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png'
     />
     <button
       className="btn btn-sm btn-primary"

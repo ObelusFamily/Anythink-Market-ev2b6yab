@@ -68,6 +68,12 @@ async def create_new_item(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=strings.ITEM_ALREADY_EXISTS,
         )
+    if not item_create.image:
+        item_image = "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png"
+    else:
+        item_image = item_create.image
+
+
     item = await items_repo.create_item(
         slug=slug,
         title=item_create.title,
@@ -75,7 +81,7 @@ async def create_new_item(
         body=item_create.body,
         seller=user,
         tags=item_create.tags,
-        image=item_create.image
+        image=item_image
     )
     send_event('item_created', {'item': item_create.title})
     return ItemInResponse(item=ItemForResponse.from_orm(item))
