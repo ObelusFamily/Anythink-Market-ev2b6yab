@@ -30,7 +30,7 @@ const ItemPreview = (props) => {
   };
 
   if (!item.image) {
-    itme.image = "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png"
+    item.image = "https://raw.githubusercontent.com/ObelusFamily/Anythink-Market-ev2b6yab/166f2310437467eacc6dfe8062a0ac908b25d1dd/frontend/public/placeholder.png"
   }
 
   return (
